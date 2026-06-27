@@ -230,6 +230,8 @@ docker ps
 ```
 
 showing running containers.
+<img width="1465" height="715" alt="WhatsApp Image 2026-06-27 at 6 43 00 PM" src="https://github.com/user-attachments/assets/3c043238-7a74-4f44-b2f0-b6bc810f8e52" />
+
 
 
 ## API Response
@@ -241,6 +243,8 @@ http://localhost:5000/api/status
 ```
 
 showing successful API response.
+<img width="946" height="870" alt="WhatsApp Image 2026-06-27 at 6 44 16 PM" src="https://github.com/user-attachments/assets/d1b0519f-07c3-4dd7-afd7-a05f935c77d7" />
+
 
 
 ---
