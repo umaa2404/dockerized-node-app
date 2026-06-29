@@ -316,5 +316,18 @@ docker system prune
 DevOps Internship Project
 
 ---
+## Docker Deployment
 
+Docker image:
+
+umamani24/dockerized-node-app
+
+Run container:
+
+docker run -d -p 5000:5000 --name node-app umamani24/dockerized-node-app
+
+
+Application runs on:
+
+http://localhost:5000
 ⭐ If you find this project useful, feel free to star the repository!
