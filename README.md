@@ -1,20 +1,23 @@
 # 🐳 Dockerized Node.js Application
 
-## 📌 Project Overview
+![CI/CD Pipeline](https://github.com/umaa2404/dockerized-node-app/actions/workflows/ci-cd.yml/badge.svg)
 
-This project demonstrates how to containerize a Node.js web application using Docker.
+A Node.js application containerized using Docker with MongoDB integration and automated CI/CD pipeline using GitHub Actions.
 
-The application runs inside a Docker container and connects with a MongoDB database running in a separate container using Docker Compose.
+This project was developed as part of my **DevOps Internship Task** to understand real-world DevOps practices including containerization, image management, Docker Compose, Docker Hub deployment, and CI/CD automation.
 
-This project was created as part of my **DevOps Internship Task** to understand and implement:
+---
 
-- Docker Containerization
-- Docker Images
-- Docker Containers
-- Docker Compose
-- Multi-stage Docker Builds
-- Application and Database Container Communication
+# 📌 Project Overview
 
+This project demonstrates how to:
+
+- Containerize a Node.js application using Docker
+- Create optimized Docker images
+- Run multiple services using Docker Compose
+- Connect Node.js application with MongoDB container
+- Push Docker images to Docker Hub
+- Automate build and deployment workflow using GitHub Actions
 
 ---
 
@@ -25,211 +28,14 @@ This project was created as part of my **DevOps Internship Task** to understand 
 - MongoDB
 - Docker
 - Docker Compose
+- Docker Hub
+- GitHub Actions
 - WSL 2
-
 
 ---
 
 # 📂 Project Structure
 
-```
-dockerized-node-app
-
-│
-├── Dockerfile
-├── docker-compose.yml
-├── README.md
-│
-└── app
-    │
-    ├── server.js
-    ├── package.json
-    ├── package-lock.json
-    └── .env
-```
-
----
-
-# 🐳 Docker Implementation
-
-## Dockerfile
-
-This project uses a **multi-stage Docker build**.
-
-### Stage 1: Builder
-
-- Uses Node.js Alpine image
-- Installs application dependencies
-- Copies application source code
-
-
-### Stage 2: Production
-
-- Creates a lightweight Node.js image
-- Copies required files from builder stage
-- Runs the Node.js application
-
-
----
-
-# ⚙️ Prerequisites
-
-Before running this project, make sure you have installed:
-
-- Docker Desktop
-- Docker Compose
-
-
-Check Docker installation:
-
-```bash
-docker --version
-```
-
-Check Docker Compose:
-
-```bash
-docker compose version
-```
-
-
----
-
-# 🔧 Installation and Setup
-
-Clone the repository:
-
-```bash
-git clone <your-repository-url>
-```
-
-Navigate to the project directory:
-
-```bash
-cd dockerized-node-app
-```
-
-
----
-
-# 🔨 Build Docker Containers
-
-Build the Docker images:
-
-```bash
-docker compose build
-```
-
-
----
-
-# ▶️ Run Application
-
-Start the containers:
-
-```bash
-docker compose up
-```
-
-
-The application will run on:
-
-```
-http://localhost:5000
-```
-
-
-MongoDB will run on:
-
-```
-localhost:27017
-```
-
-
----
-
-# 🛑 Stop Application
-
-To stop all running containers:
-
-```bash
-docker compose down
-```
-
-
----
-
-# 📡 API Endpoints
-
-## 1. Home Route
-
-### GET /
-
-Response:
-
-```
-Dockerized Node.js Application Running 🚀
-```
-
-
----
-
-## 2. Application Status API
-
-### GET /api/status
-
-Response:
-
-```json
-{
-    "status": "success",
-    "message": "Application running inside Docker"
-}
-```
-
-
----
-
-# 🐋 Docker Containers
-
-This project contains two containers:
-
-
-## 1. Node.js Application Container
-
-```
-Container:
-dockerized-node-app-app
-
-Port:
-5000:5000
-```
-
-
-## 2. MongoDB Database Container
-
-```
-Container:
-mongo
-
-Port:
-27017:27017
-```
-
-
----
-
-# 📸 Screenshots
-
-## Running Docker Containers
-
-Add screenshot of:
-
-```
-docker ps
-```
-
-showing running containers.
 <img width="1465" height="715" alt="WhatsApp Image 2026-06-27 at 6 43 00 PM" src="https://github.com/user-attachments/assets/3c043238-7a74-4f44-b2f0-b6bc810f8e52" />
 
 
